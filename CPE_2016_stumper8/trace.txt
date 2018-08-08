@@ -1,0 +1,261 @@
+B-CPE-157 colle8
+
+Advanced tests
+
+  01 - hangman:
+    Passed: 40.0 %
+    Crashed: 0.0 %
+
+
+
+
+=== TEST LOGS ===
+
+====================
+ Hangman - Preliminaries
+====================
+
+# Checking for forbidden functions...
+# Authorized functions: malloc,free,read,write,open,close,rand,srand,random,srandom,time,getpid
+# OK
+
+Hangman - Preliminaries: SUCCESS
+
+====================
+ Hangman - Subject Example
+====================
+
+# Executing all tests...
+~/> cat tasks_inputs/hangman/my_swap_inputs | ./hangman tasks_inputs/hangman/my_swap
+*******
+Tries: 10
+
+Your letter: m******
+Tries: 10
+
+Your letter: 
+: is not in this word
+m******
+Tries: 9
+
+Your letter: 
+: is not in this word
+m******
+Tries: 8
+
+Your letter: 
+: is not in this word
+m******
+Tries: 7
+
+Your letter: 
+: is not in this word
+m******
+Tries: 6
+
+Your letter: 
+: is not in this word
+m******
+Tries: 5
+
+Your letter: 
+: is not in this word
+m******
+Tries: 4
+
+Your letter: 
+: is not in this word
+m******
+Tries: 3
+
+Your letter: 
+: is not in this word
+m******
+Tries: 2
+
+Your letter: 
+: is not in this word
+m******
+Tries: 1
+
+Your letter: 
+: is not in this word
+m******
+Tries: 0
+
+You lost!
+# Test failed: invalid output.
+# Expected:
+*******
+Tries: 10
+
+Your letter: m******
+Tries: 10
+
+Your letter: my*****
+Tries: 10
+
+Your letter: my_****
+Tries: 10
+
+Your letter: my_s***
+Tries: 10
+
+Your letter: my_sw**
+Tries: 10
+
+Your letter: my_swa*
+Tries: 10
+
+Your letter: my_swap
+Tries: 10
+
+Congratulations!
+# Test failed: invalid output.
+
+Hangman - Subject Example: FAILURE
+
+====================
+ Hangman - More tests (valid letter, 10 tries)
+====================
+
+# Executing all tests...
+~/> cat tasks_inputs/hangman/pineapple_inputs | ./hangman tasks_inputs/hangman/pineapple
+*********
+Tries: 10
+
+Your letter: p****pp**
+Tries: 10
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 9
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 8
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 7
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 6
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 5
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 4
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 3
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 2
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 1
+
+Your letter: 
+: is not in this word
+p****pp**
+Tries: 0
+
+You lost!
+# Test failed: invalid output.
+# Expected:
+*********
+Tries: 10
+
+Your letter: p****pp**
+Tries: 10
+
+Your letter: pi***pp**
+Tries: 10
+
+Your letter: pin**pp**
+Tries: 10
+
+Your letter: pine*pp*e
+Tries: 10
+
+Your letter: pineapp*e
+Tries: 10
+
+Your letter: pineapple
+Tries: 10
+
+Congratulations!
+# Test failed: invalid output.
+
+Hangman - More tests (valid letter, 10 tries): FAILURE
+
+====================
+ Hangman - Tries number
+====================
+
+# Executing all tests...
+~/> cat tasks_inputs/hangman/my_swap_bad_inputs | ./hangman tasks_inputs/hangman/my_swap 1
+*******
+Tries: 1
+
+Your letter: m******
+Tries: 1
+
+Your letter: 
+: is not in this word
+m******
+Tries: 0
+
+You lost!
+# Test failed: invalid output.
+# Expected:
+*******
+Tries: 1
+
+Your letter: m******
+Tries: 1
+
+Your letter: my*****
+Tries: 1
+
+Your letter: my_****
+Tries: 1
+
+Your letter: b: is not in this word
+my_****
+Tries: 0
+
+You lost!
+# Test failed: invalid output.
+
+Hangman - Tries number: FAILURE
+
+====================
+ Hangman - Error handling
+====================
+
+# Executing all tests...
+Hangman - Error handling: SUCCESS
+
+====================================
+Not enough tests passed to validate.
+Oral presentation not needed, sorry.
+You will do better next time!
+====================================
